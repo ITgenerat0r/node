@@ -9,18 +9,18 @@ function opr(){
 		};
 		function Znach(){ 
 			switch(c1.m){
-				case 1: if(c1.d>20){alert("Ваш знак зодиака - Козерог ♑");}else{alert("Ваш знак зодиака - Водолей ♒");} break;
-				case 2: if(c1.d>20){alert("Ваш знак зодиака - Водолей ♒");}else{alert("Ваш знак зодиака - Рыбы ♓");} break;
-				case 3: if(c1.d>20){alert("Ваш знак зодиака - Рыбы ♓");}else{alert("Ваш знак зодиака - Овен ♈");} break;
-				case 4: if(c1.d>20){alert("Ваш знак зодиака - Овен ♈");}else{alert("Ваш знак зодиака - Телец ♉");} break;
-				case 5: if(c1.d>20){alert("Ваш знак зодиака - Телец ♉");}else{alert("Ваш знак зодиака - Близнецы ♊");} break;
-				case 6: if(c1.d>21){alert("Ваш знак зодиака - Близнецы ♊");}else{alert("Ваш знак зодиака - Рак ♋");} break;
-				case 7: if(c1.d>22){alert("Ваш знак зодиака - Рак ♋");}else{alert("Ваш знак зодиака - Лев ♌");} break;
-				case 8: if(c1.d>23){alert("Ваш знак зодиака - Лев ♌");}else{alert("Ваш знак зодиака - Дева ♍");} break;
-				case 9: if(c1.d>23){alert("Ваш знак зодиака - Дева ♍");}else{alert("Ваш знак зодиака - Весы ♎");} break;
-				case 10: if(c1.d>23){alert("Ваш знак зодиака - Весы ♎");}else{alert("Ваш знак зодиака - Скорпион ♏");} break;
-				case 11: if(c1.d>22){alert("Ваш знак зодиака - Скорпион ♏");}else{alert("Ваш знак зодиака - Стрелец ♐");} break;
-				case 12: if(c1.d>21){alert("Ваш знак зодиака - Стрелец ♐");}else{alert("Ваш знак зодиака - Козерог ♑");} break;
+				case 1: if(c1.d>20){return("Ваш знак зодиака - Козерог ♑");}else{return("Ваш знак зодиака - Водолей ♒");} break;
+				case 2: if(c1.d>20){return("Ваш знак зодиака - Водолей ♒");}else{return("Ваш знак зодиака - Рыбы ♓");} break;
+				case 3: if(c1.d>20){return("Ваш знак зодиака - Рыбы ♓");}else{return("Ваш знак зодиака - Овен ♈");} break;
+				case 4: if(c1.d>20){return("Ваш знак зодиака - Овен ♈");}else{return("Ваш знак зодиака - Телец ♉");} break;
+				case 5: if(c1.d>20){return("Ваш знак зодиака - Телец ♉");}else{return("Ваш знак зодиака - Близнецы ♊");} break;
+				case 6: if(c1.d>21){return("Ваш знак зодиака - Близнецы ♊");}else{return("Ваш знак зодиака - Рак ♋");} break;
+				case 7: if(c1.d>22){return("Ваш знак зодиака - Рак ♋");}else{return("Ваш знак зодиака - Лев ♌");} break;
+				case 8: if(c1.d>23){return("Ваш знак зодиака - Лев ♌");}else{return("Ваш знак зодиака - Дева ♍");} break;
+				case 9: if(c1.d>23){return("Ваш знак зодиака - Дева ♍");}else{return("Ваш знак зодиака - Весы ♎");} break;
+				case 10: if(c1.d>23){return("Ваш знак зодиака - Весы ♎");}else{return("Ваш знак зодиака - Скорпион ♏");} break;
+				case 11: if(c1.d>22){return("Ваш знак зодиака - Скорпион ♏");}else{return("Ваш знак зодиака - Стрелец ♐");} break;
+				case 12: if(c1.d>21){return("Ваш знак зодиака - Стрелец ♐");}else{return("Ваш знак зодиака - Козерог ♑");} break;
 
 			}
 		}
@@ -41,16 +41,16 @@ function opr(){
 if(num!=0){c1.y=num;}
 		if((c1.m>=0)&&(c1.m<13)&&(c1.y>0)&&(c1.y<10000)){ 
 		switch(c1.m){
-			case 1: case 3: case 5: case 7: case 8: case 10: case 12: if((c1.d<1)||(c1.d>31)){alert("Введена неправильная дата!");}else{Znach();} break;
-			case 4: case 6: case 9: case 11: if((c1.d<1)||(c1.d>30)){alert("Введена неправильная дата!"); }else{Znach();} break;
-			case 2: if(c1.y%4==0){if((c1.d<1)||(c1.d>30)){alert("Введена неправильная дата!");}else{Znach();} break; }else{
-				if((c1.d<1)||(c1.d>29)){alert("Введена неправильная дата!");}else{Znach();} break; 
+			case 1: case 3: case 5: case 7: case 8: case 10: case 12: if((c1.d<1)||(c1.d>31)){return("Введена неправильная дата!");}else{Znach();} break;
+			case 4: case 6: case 9: case 11: if((c1.d<1)||(c1.d>30)){return("Введена неправильная дата!"); }else{Znach();} break;
+			case 2: if(c1.y%4==0){if((c1.d<1)||(c1.d>30)){return("Введена неправильная дата!");}else{Znach();} break; }else{
+				if((c1.d<1)||(c1.d>29)){return("Введена неправильная дата!");}else{Znach();} break; 
 			}
 		}
-		}else{alert("Допущена ошибка при вводе даты!");}
+		}else{return("Допущена ошибка при вводе даты!");}
 
 
-		//alert(c1.d+"."+c1.m+"."+c1.y);
+		//return(c1.d+"."+c1.m+"."+c1.y);
 	}
 
 
